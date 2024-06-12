@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #010118;
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+    color: white;
+}
+
+.elipse1, .elipse2, .elipse3, .elipse4{
+    position: absolute;
+    z-index: -3;
+}
+
+.elipse1{
+    right: -200px;
+    top: 50vh;
+}
+
+.elipse2{
+    top: -50px;
+    
+}
+
+.elipse3{
+    top: 180vh;
+    left: 0;
+}
+
+.elipse4{
+    right: -300px;
+    top: 270vh;
+}
+
+
+.body-container{
+    width: 80%;
+    z-index: 1;
+}
+
+h1{
+    font-family: "Outfit", sans-serif;
+    font-size: 4rem;
+}
+
+h2{
+    font-family: "Outfit", sans-serif;
+    font-size: 3rem;
+}
+
+h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+p{
+    font-family: "Roboto", sans-serif;
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+.button-container{
+    margin-top: 30px;
+}
+
+.main-btn, .second-btn, .cta-button{
+    padding: 15px 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 1.5px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.main-btn{
+    background-color: #8E90DD;
+}
+
+.second-btn{
+    border: 1px solid #86CFD0;
+}
+
+.cta-button{
+    color: white;
+    background-color: black;
+}
+
+#nav-container{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#nav-container a{
+    color: white;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+}
+
+.logo-box a{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav-box{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+#home-container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px;
+}
+
+.container-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-box img{
+    width: 80%;
+}
+
+.imgBox{
+    align-items: center;
+}
+
+#shop-container{
+    padding: 30px;
+}
+
+.products-container{
+    margin: 7.5vh 0vw;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-box{
+    width: 23%;
+    height: 100%;
+    background-color: #16143A;
+    border-radius: 30px;  
+}
+
+.featured-container{
+    padding: 30px;
+}
+
+.featured-box{
+    margin: 3vh 0vw;
+    height: 20vh;
+    width: 100%;
+    background-color: #16143A;
+}
+
+.about-container{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px;
+}
+
+.cta-container{
+    height: 45vh;
+    border-radius: 30px;
+    width: 100%;
+    background: rgb(85,85,173);
+    background: linear-gradient(139deg, rgba(85,85,173,1) 0%, rgba(105,169,170,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cta-container p{
+    opacity: 1;
+    color: black;
+    font-weight: bold;
+}
+
+.cta-container h1{
+    margin-bottom: 20px;
+}
+
+.footer-container{
+    height: 50vh;
+}
+
+.footer-bg{
+    background: rgb(85,85,173);
+    background: linear-gradient(139deg, rgba(85,85,173,1) 0%, rgba(105,169,170,1) 100%);
+    height: 1vh;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+/*  TABLET AND SMALL LAPTOPS  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+/*   MOBILE  */
+@media only screen and (max-width: 768px) {
+    .elipse1, .elipse2, .elipse3, .elipse4{
+        display: none;
+    }
+    .body-container{
+        width: 90%;
+    }
+    h1{
+        font-family: "Outfit", sans-serif;
+        font-size: 2.5rem;
+    }
+    
+    h2{
+        font-family: "Outfit", sans-serif;
+        font-size: 1.8rem;
+    }
+    
+    h3{
+        font-family: "Outfit", sans-serif;
+        font-size: 1.5rem;
+    }
+    #home-container {    
+        flex-direction: column-reverse;
+    }
+    #home-container, #shop-container, .featured-container, .about-container, .cta-container{
+        margin: 3vh 0vw;
+    }
+    .container-box{
+        width: 100%;
+    }
+    .button-container{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .button-container a{
+        width: 100%;
+        text-align: center;
+    }
+    .abcf{
+        flex-direction: column-reverse;
+    }
+    .abcs{
+        flex-direction: column;
+    }
+    .products-container{
+        flex-wrap: wrap;
+    }
+
+}
+  

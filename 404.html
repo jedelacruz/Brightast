@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Brightast</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <style>
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #010118;
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+    color: white;
+}
+.body-container{
+    width: 80%;
+    z-index: 1;
+}
+
+h1{
+    font-family: "Outfit", sans-serif;
+    font-size: 3rem;
+    opacity: 0.7;
+}
+
+h2{
+    font-family: "Outfit", sans-serif;
+    font-size: 3rem;
+}
+
+h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.button-container{
+    margin-top: 30px;
+}
+
+.main-btn{
+    padding: 15px 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    letter-spacing: 1.5px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.main-btn{
+    background-color: #8E90DD;
+}
+
+#nav-container{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#nav-container a{
+    color: white;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+}
+
+.logo-box a{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav-box{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.home-container{
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+/*   MOBILE  */
+@media only screen and (max-width: 768px) {
+    .body-container{
+        width: 90%;
+    }
+    h1{
+        font-family: "Outfit", sans-serif;
+        font-size: 2rem;
+    }
+    .button-container{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .button-container a{
+        width: 100%;
+        text-align: center;
+    }
+    .home-container img{
+        width: 100%;
+    }
+}
+        </style>
+    </head>
+    <body>
+
+        <div class="body-container">
+
+            <div id="nav-container">
+                <div class="logo-box">
+                    <a href="#">brightast</a>
+                </div>
+                <div class="nav-box">
+                    <a href="">home</a>
+                    <a href="about.html">about</a>
+                    <a href="">shop</a>
+                    <a href=""><i class="fa-regular fa-user"></i></a>
+                </div>
+            </div>
+
+            <div class="home-container">
+                <img src="/images/404.png" alt="">
+                <h1>the page you are looking<br> for doesn’t exist....</h1>
+                <a href="index.html" class="main-btn">RETURN HOME</a>
+            </div>
+        
+        </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>
