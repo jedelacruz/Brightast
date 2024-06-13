@@ -81,10 +81,37 @@ p{
     letter-spacing: 1.5px;
     margin-right: 20px;
     font-size: 18px;
+    transition: all 0.5s;
 }
 
 .main-btn{
     background-color: #8E90DD;
+    border: 1px solid #8E90DD;
+}
+
+.second-btn{
+    border: 1px solid #86CFD0;
+}
+
+.cta-button{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.main-btn:hover{
+    background-color: transparent;
+}
+
+.second-btn:hover{
+    background-color: #86CFD0;
+    color: black;
+}
+
+.cta-button:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
 }
 
 #nav-container{
@@ -218,4 +245,56 @@ p{
     position: absolute;
     width: 100%;
     left: 0;
+}
+
+/*  TABLET AND SMALL LAPTOPS  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+/*   MOBILE  */
+@media only screen and (max-width: 768px) {
+    .elipse1, .elipse2, .elipse3, .elipse4{
+        display: none;
+    }
+    .body-container{
+        width: 90%;
+    }
+    h1{
+        font-family: "Outfit", sans-serif;
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-family: "Outfit", sans-serif;
+        font-size: 1.8rem;
+    }
+    
+    h3{
+        font-family: "Outfit", sans-serif;
+        font-size: 1.5rem;
+    }
+    .container-box{
+        width: 90%;
+    }
+    .button-container{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .button-container a{
+        width: 100%;
+        text-align: center;
+    }
+    .abcf{
+        flex-direction: column-reverse;
+    }
+    .abcs{
+        flex-direction: column;
+    }
+    .make-products-container{
+        flex-direction: column;
+    }
+    .make-products-container img{
+        width: 100%;
+    }
 }
